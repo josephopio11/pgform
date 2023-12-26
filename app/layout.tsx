@@ -10,8 +10,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "PageForm (@CodeWithKliton)",
-  description: "Check my youtube channel for more content",
+  title: process.env.APP_NAME,
+  description:
+    "This free app helps you to collect data from any kinds of individuals by creating drag and drop form elements. ",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
